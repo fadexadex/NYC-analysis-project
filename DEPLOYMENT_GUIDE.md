@@ -96,8 +96,16 @@ This guide walks you through deploying your NYC Yellow Taxi Analytics Dashboard 
 
 ## Step 4: Finalize and Reload
 
-1.  **Environment Variables (Optional)**:
-    If you want to keep your MongoDB URI secret, you can set it in the WSGI file using `os.environ['MONGO_URI'] = '...'` before importing your app, or use a `.env` file and `python-dotenv`.
+1.  **Environment Variables**:
+    Since we are using `python-dotenv`, you need to create a `.env` file in your project directory on PythonAnywhere.
+    *   In the **Files** tab on PythonAnywhere, navigate to your project folder (`/home/YOUR_USERNAME/YOUR_REPO_NAME`).
+    *   Create a new file named `.env`.
+    *   Add your environment variables:
+        ```
+        MONGO_URI=your_mongodb_connection_string
+        DB_NAME=yellow_taxi_stats
+        ```
+    *   Save the file.
 
 2.  **Reload**:
     *   Go to the top of the **Web** tab.

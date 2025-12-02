@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -15,9 +17,12 @@ from components.charts import (
     create_pie_chart, create_scatter_chart, COLORS, apply_chart_theme
 )
 
+# Load environment variables
+load_dotenv()
+
 # MongoDB Configuration
-MONGO_URI = "mongodb+srv://fadehandaniel2006:J5Eo957IeSwn49fR@cluster0.dobfa6u.mongodb.net/"
-DB_NAME = "yellow_taxi_stats"
+MONGO_URI = os.getenv("MONGO_URI")
+DB_NAME = os.getenv("DB_NAME", "yellow_taxi_stats")
 
 # Initialize MongoDB connection
 try:
