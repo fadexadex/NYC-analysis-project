@@ -1,0 +1,30 @@
+[
+  {
+    "pickup_year":2015,
+    "pickup_month":1,
+    "trip_count":12647142,
+    "avg_fare":11.87,
+    "total_revenue":190536579.0300000012
+  },
+  {
+    "pickup_year":2016,
+    "pickup_month":1,
+    "trip_count":10820149,
+    "avg_fare":12.43,
+    "total_revenue":168529552.5699999928
+  },
+  {
+    "pickup_year":2016,
+    "pickup_month":2,
+    "trip_count":11292249,
+    "avg_fare":12.33,
+    "total_revenue":175205403.8700000048
+  },
+  {
+    "pickup_year":2016,
+    "pickup_month":3,
+    "trip_count":12114153,
+    "avg_fare":12.7,
+    "total_revenue":193152851.2100000083
+  }
+]

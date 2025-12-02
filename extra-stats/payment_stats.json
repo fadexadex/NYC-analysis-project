@@ -1,0 +1,37 @@
+[
+  {
+    "payment_type":3,
+    "trip_count":121522,
+    "avg_fare":13.84,
+    "avg_tip":0.01,
+    "avg_tip_percent":0.17
+  },
+  {
+    "payment_type":4,
+    "trip_count":43138,
+    "avg_fare":14.31,
+    "avg_tip":0.0,
+    "avg_tip_percent":0.02
+  },
+  {
+    "payment_type":5,
+    "trip_count":2,
+    "avg_fare":8.0,
+    "avg_tip":0.0,
+    "avg_tip_percent":0.0
+  },
+  {
+    "payment_type":2,
+    "trip_count":15982594,
+    "avg_fare":11.35,
+    "avg_tip":0.0,
+    "avg_tip_percent":0.0
+  },
+  {
+    "payment_type":1,
+    "trip_count":30726437,
+    "avg_fare":12.82,
+    "avg_tip":2.73,
+    "avg_tip_percent":22.86
+  }
+]

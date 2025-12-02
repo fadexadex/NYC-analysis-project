@@ -1,0 +1,153 @@
+/* Responsive Design Breakpoints */
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767.98px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        border-right: none;
+        border-top: 1px solid var(--border-light);
+        z-index: 100;
+        padding: 0;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        background: var(--bg-surface);
+    }
+
+    .sidebar-header {
+        display: none;
+    }
+
+    .nav-item {
+        flex-direction: column;
+        padding: 8px;
+        margin: 4px;
+        font-size: 10px;
+        text-align: center;
+        min-width: 60px;
+    }
+
+    .nav-icon {
+        margin-right: 0;
+        margin-bottom: 4px;
+        font-size: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-bottom: 70px; /* Space for bottom nav */
+        height: calc(100vh - 70px);
+    }
+
+    .header-title {
+        font-size: 18px;
+    }
+
+    .header-subtitle {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .col-span-12, .col-span-6, .col-span-4, .col-span-3 {
+        grid-column: span 1;
+    }
+
+    .stat-card {
+        padding: var(--spacing-md);
+    }
+
+    .stat-value {
+        font-size: 24px;
+    }
+    
+    /* Hide breadcrumbs on mobile */
+    .breadcrumbs {
+        display: none;
+    }
+}
+
+/* Tablet Devices (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .sidebar {
+        width: 80px; /* Collapsed width */
+        padding: 16px 8px;
+    }
+
+    .sidebar-header h3 {
+        display: none;
+    }
+
+    .nav-item {
+        justify-content: center;
+        padding: 12px;
+        margin: 8px 4px;
+    }
+
+    .nav-item span {
+        display: none; /* Hide text labels */
+    }
+
+    .nav-icon {
+        margin-right: 0;
+        font-size: 24px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-span-12 { grid-column: span 2; }
+    .col-span-6, .col-span-4, .col-span-3 { grid-column: span 1; }
+}
+
+/* Desktop Devices (> 1024px) */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    /* 4 columns for stat cards on desktop */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* High Resolution / Large Screens */
+@media (min-width: 1440px) {
+    .content-scroll-area {
+        max-width: 1600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin: 0;
+        height: auto;
+        overflow: visible;
+    }
+
+    .chart-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

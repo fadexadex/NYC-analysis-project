@@ -1,0 +1,42 @@
+{
+  "random_forest": {
+    "rmse": 2.8197413105399485,
+    "r2": 0.9235318914964414,
+    "mae": 1.528721050175966,
+    "num_trees": 30,
+    "max_depth": 10
+  },
+  "kmeans": {
+    "num_clusters": 10,
+    "total_trips_analyzed": 2304594
+  },
+  "data_summary": {
+    "total_records_raw": 47248845,
+    "total_records_cleaned": 46873693,
+    "cleaning_retention_rate": "99.21%",
+    "date_range_start": "2015-01-01",
+    "date_range_end": "2016-03-31"
+  },
+  "feature_importance": [
+    {
+      "feature": "trip_distance",
+      "importance": 0.6647358952047029
+    },
+    {
+      "feature": "RateCodeID",
+      "importance": 0.3279573232917248
+    },
+    {
+      "feature": "pickup_hour",
+      "importance": 0.004955209798434035
+    },
+    {
+      "feature": "pickup_day",
+      "importance": 0.0016986101973955525
+    },
+    {
+      "feature": "passenger_count",
+      "importance": 0.0006529615077428666
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "feature":"trip_distance",
+    "importance":0.6647358952
+  },
+  {
+    "feature":"RateCodeID",
+    "importance":0.3279573233
+  },
+  {
+    "feature":"pickup_hour",
+    "importance":0.0049552098
+  },
+  {
+    "feature":"pickup_day",
+    "importance":0.0016986102
+  },
+  {
+    "feature":"passenger_count",
+    "importance":0.0006529615
+  }
+]

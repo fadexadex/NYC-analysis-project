@@ -1,0 +1,32 @@
+[
+  {
+    "distance_category":"20+ miles",
+    "trip_count":228954,
+    "avg_fare":62.17,
+    "avg_duration":48.23
+  },
+  {
+    "distance_category":"5-10 miles",
+    "trip_count":4001166,
+    "avg_fare":24.05,
+    "avg_duration":24.02
+  },
+  {
+    "distance_category":"2-5 miles",
+    "trip_count":13397605,
+    "avg_fare":13.39,
+    "avg_duration":16.07
+  },
+  {
+    "distance_category":"10-20 miles",
+    "trip_count":2215439,
+    "avg_fare":43.38,
+    "avg_duration":36.4
+  },
+  {
+    "distance_category":"0-2 miles",
+    "trip_count":27030529,
+    "avg_fare":7.09,
+    "avg_duration":7.8
+  }
+]
